@@ -84,4 +84,4 @@ Use the issues in this repository for:
 
 ## Related
 
-- [game-genre-playbooks](https://github.com/gamegene-app/game-genre-playbooks): a free skill for AI agents with genre-by-genre design calls built from the same records. It works with or without this server.
+- [game-genre-playbooks](https://github.com/gamegene-app/game-genre-playbooks): a skill for AI agents with genre-by-genre design calls, built from the same records. It works with or without this server.

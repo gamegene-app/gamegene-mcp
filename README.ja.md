@@ -84,4 +84,4 @@ AI には、使った記録の出典と GameGene のページを添えて答え�
 
 ## 関連
 
-- [game-genre-playbooks](https://github.com/gamegene-app/game-genre-playbooks): 同じ記録から作った、ジャンルごとの設計判断の無料スキル。このサーバーがあってもなくても使えます。
+- [game-genre-playbooks](https://github.com/gamegene-app/game-genre-playbooks): 同じ記録から作った、ジャンルごとの設計判断のスキル。このサーバーがあってもなくても使えます。
