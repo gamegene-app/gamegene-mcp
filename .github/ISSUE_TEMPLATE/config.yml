@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: A missing game or design question / 記録が無い作品・設計の問い
+    url: https://gamegene.app/feedback?panel=submit
+    about: Send a research request on GameGene. It goes straight into the research queue. / GameGene の調査依頼へ。そのまま調査の列に入ります。
+  - name: How to connect / つなぎ方
+    url: https://gamegene.app/mcp
+    about: Step-by-step instructions for each client. / クライアントごとの手順。

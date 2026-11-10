@@ -1,0 +1,30 @@
+name: Bug / 不具合
+description: A tool errors, returns something wrong, or a client cannot connect.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: input
+    id: client
+    attributes:
+      label: Client / クライアント
+      placeholder: e.g. Claude (web), Claude Code 2.x, ChatGPT, Codex CLI 0.170, VS Code
+    validations:
+      required: true
+  - type: input
+    id: tool
+    attributes:
+      label: Tool / ツール
+      description: Optional. Which tool, if you know. / 分かれば。
+      placeholder: e.g. gamegene_search
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened / 起きたこと
+      description: The error or the wrong result, and what you expected. Paste the tool arguments if your client shows them. / エラーや誤った結果と、期待したこと。クライアントがツールの引数を見せていれば貼ってください。
+    validations:
+      required: true
+  - type: input
+    id: when
+    attributes:
+      label: When / いつ
+      description: Optional. Roughly when it happened, with your time zone. Helps us find the call in our logs. / おおよその日時 (時間帯つき)。記録から呼び出しを探す手がかりになります。
