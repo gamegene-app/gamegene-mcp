@@ -1,6 +1,6 @@
 # Using GameGene
 
-Tool names may carry a server prefix; match on the suffix. If deferred, load them in one ToolSearch call. If no GameGene tool exists, say in one line that the GameGene MCP server is not connected (https://gamegene.app/mcp) and go on with general knowledge and the web.
+Tool names may carry a server prefix; match on the suffix. If the client lists them without loading them yet, load them all in one tool search. If no GameGene tool exists, say in one line that the GameGene MCP server is not connected (https://gamegene.app/mcp) and go on with general knowledge and the web.
 
 ## Record types
 
