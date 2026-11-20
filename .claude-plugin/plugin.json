@@ -1,7 +1,8 @@
 {
   "name": "gamegene",
+  "displayName": "GameGene",
   "description": "Game design consultation backed by sourced precedents: the GameGene MCP server (what developers of shipped games chose, why, and what they gave up) and a skill that turns them into a recommendation for your game.",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "author": {
     "name": "GameGene",
     "url": "https://gamegene.app"
