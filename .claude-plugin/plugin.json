@@ -1,10 +1,19 @@
 {
   "name": "gamegene",
   "description": "Game design consultation backed by sourced precedents: the GameGene MCP server (what developers of shipped games chose, why, and what they gave up) and a skill that turns them into a recommendation for your game.",
-  "version": "0.2.0",
-  "author": { "name": "GameGene", "url": "https://gamegene.app" },
+  "version": "0.2.1",
+  "author": {
+    "name": "GameGene",
+    "url": "https://gamegene.app"
+  },
   "homepage": "https://github.com/gamegene-app/gamegene-mcp",
   "repository": "https://github.com/gamegene-app/gamegene-mcp",
   "license": "MIT",
-  "keywords": ["game-design", "gamedev", "indie-game", "mcp"]
+  "privacyPolicyUrl": "https://gamegene.app/legal/privacy",
+  "keywords": [
+    "game-design",
+    "gamedev",
+    "indie-game",
+    "mcp"
+  ]
 }
