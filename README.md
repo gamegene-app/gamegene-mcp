@@ -12,6 +12,18 @@
 
 This repository is the public front door for the server: what it does, how to connect, and where to report problems. The server itself is hosted by GameGene; its source is not in this repository.
 
+## Plugin (Claude)
+
+This repository is also a Claude plugin. It bundles the MCP server with **game-design-consult**, a skill that tells the AI when to reach for GameGene and how to use what comes back: it cross-checks GameGene's sourced records with general knowledge and the web, labels which parts are the developers' own words, and ends with a recommendation and cheap experiments for your game. In a project it can keep a short design log in your repository (it asks before creating one).
+
+Claude Code:
+
+```
+/plugin install gamegene --marketplace gamegene-app/gamegene-mcp
+```
+
+On older versions: `/plugin marketplace add gamegene-app/gamegene-mcp`, then `/plugin install gamegene@gamegene`. Open `/mcp` and sign in to GameGene once.
+
 ## Connect
 
 Server URL:
@@ -52,7 +64,7 @@ The AI picks the tools on its own. The main ones:
 | `gamegene_joseki` | Heuristics: design judgments that recur across games, with where they came from |
 | `gamegene_person` | One creator: the games they worked on and what they said |
 
-The full, current list is on [gamegene.app/mcp](https://gamegene.app/mcp#tools). The server is read-only: it cannot change any records.
+The full, current list is on [gamegene.app/mcp](https://gamegene.app/mcp#tools). Two tools send something to GameGene: `gamegene_request` files a research request and `gamegene_send_sources` suggests sources to check. Neither changes the records directly.
 
 ## Plans and limits
 
@@ -84,4 +96,4 @@ Use the issues in this repository for:
 
 ## Related
 
-- [game-genre-playbooks](https://github.com/gamegene-app/game-genre-playbooks): a skill for AI agents with genre-by-genre design calls, built from the same records. It works with or without this server.
+- [game-genre-playbooks](https://github.com/gamegene-app/game-genre-playbooks) (archived): the earlier genre-by-genre playbook skill. The plugin in this repository replaces it.

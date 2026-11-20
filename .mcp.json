@@ -1,0 +1,5 @@
+{
+  "mcpServers": {
+    "gamegene": { "type": "http", "url": "https://gamegene.app/api/mcp" }
+  }
+}

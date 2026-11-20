@@ -1,0 +1,14 @@
+{
+  "name": "gamegene",
+  "owner": { "name": "GameGene", "url": "https://gamegene.app" },
+  "metadata": {
+    "description": "Game design consultation backed by sourced precedents: what developers of shipped games chose, why, and what they gave up."
+  },
+  "plugins": [
+    {
+      "name": "gamegene",
+      "source": "./",
+      "description": "The GameGene MCP server plus a game design consult skill that cross-checks GameGene's sourced records, general knowledge and the web, and turns them into a recommendation for your game."
+    }
+  ]
+}
