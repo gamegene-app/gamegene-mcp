@@ -12,6 +12,18 @@
 
 この repo は、サーバーの公開の入口です。できること、つなぎ方、不具合の報告先を置いています。サーバーは GameGene が運営していて、ソースはこの repo にはありません。
 
+## プラグイン (Claude)
+
+このリポジトリは Claude のプラグインでもあります。MCP サーバーと、スキル **game-design-consult** を一緒に入れます。スキルは、AI がいつ GameGene を引くか、引いた記録をどう使うかを決めます。GameGene の出典つきの記録・一般の知識・Web を突き合わせ、どこが作り手本人の言葉かを分けて示し、あなたのゲームへの提案と小さく試せることで締めます。プロジェクトの中では、設計の記録をリポジトリに短く残せます (作る前に訊きます)。
+
+Claude Code:
+
+```
+/plugin install gamegene --marketplace gamegene-app/gamegene-mcp
+```
+
+古い版では `/plugin marketplace add gamegene-app/gamegene-mcp` の後に `/plugin install gamegene@gamegene`。最初に `/mcp` を開いて GameGene にサインインします。
+
 ## つなぎ方
 
 接続先の URL:
@@ -52,7 +64,7 @@ AI には、使った記録の出典と GameGene のページを添えて答え�
 | `gamegene_joseki` | 定石 (作品をまたいで繰り返し現れる設計の判断) と、その出所 |
 | `gamegene_person` | 人物1人: 関わった作品と発言 |
 
-いまの全部の一覧は [gamegene.app/mcp](https://gamegene.app/mcp#tools) にあります。サーバーは読むだけで、記録を書き換えることはできません。
+いまの全部の一覧は [gamegene.app/mcp](https://gamegene.app/mcp#tools) にあります。GameGene へ何かを送るツールは2つです。`gamegene_request` は調査の依頼を出し、`gamegene_send_sources` は確かめてほしい出典を送ります。どちらも記録を直接は書き換えません。
 
 ## プランと回数
 
@@ -84,4 +96,4 @@ AI には、使った記録の出典と GameGene のページを添えて答え�
 
 ## 関連
 
-- [game-genre-playbooks](https://github.com/gamegene-app/game-genre-playbooks): 同じ記録から作った、ジャンルごとの設計判断のスキル。このサーバーがあってもなくても使えます。
+- [game-genre-playbooks](https://github.com/gamegene-app/game-genre-playbooks) (アーカイブ済み): 以前のジャンルごとのスキル。このリポジトリのプラグインが置き換えます。
